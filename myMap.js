@@ -11,7 +11,7 @@ function loadMapScenario() {
 map_items = [
     {
         "pokemon_id" : 12,
-        "expire": 1476589203,
+        "expire": 1476589403,
         "longitude": -77.1006083,
         "latitude": 38.953875
     }
