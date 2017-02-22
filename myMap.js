@@ -72,6 +72,7 @@ function refresh_pokemon_data() {
         west: bounds.getWest(),
         south: bounds.getSouth()
     };
+    var body = {};
     
     var additionalParams = {};
 
