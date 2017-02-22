@@ -3,14 +3,7 @@ var map_manager = {
     "map_items" : []
 }
 
-map_manager.map_items = [
-    {
-        "pokemon_id" : 12,
-        "expire": 1476589403,
-        "longitude": -77.1006083,
-        "latitude": 38.953875
-    }
-]
+map_manager.map_items = []
 
 function loadMapScenario() {
     map_manager.map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
@@ -85,7 +78,7 @@ function refresh_pokemon_data() {
     apigClient.mapPokemonsGet(params, body, additionalParams)
         .then(function(result){
             //This is where you would put a success callback
-            console.log(result);
+            map_manager.map_items = result.data;
         }).catch( function(result){
             //This is where you would put an error callback
             console.log(result);
