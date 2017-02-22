@@ -31,7 +31,7 @@ function get_count_down_time_from_expire_epoch(epoch) {
 
 
 // 2. Create pokemon image on map. 
-function get_pokemon_layer_from_map_items(map_manager.map_items) {
+function get_pokemon_layer_from_map_items(map_items) {
     var layer = new Microsoft.Maps.Layer();
     var pushpins = [];
     
