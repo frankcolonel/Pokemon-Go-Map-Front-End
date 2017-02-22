@@ -21,7 +21,7 @@ map_items = [
 // 2. Create pokemon image on map. 
 function get_pokemon_layer_from_map_items(map_items) {
     var layer = new Microsoft.Maps.Layer();
-    
+    var pushpins = [];
     
     for (var i in map_items) {
         var map_item = map_items[i];
