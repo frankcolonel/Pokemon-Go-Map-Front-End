@@ -3,7 +3,6 @@ var map_manager = {
     "map_items" : []
 }
 
-map_manager.map_items = []
 
 function loadMapScenario() {
     map_manager.map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
